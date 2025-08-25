@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Deforestation in Argentina - Informative Banner</title>
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f0f4f1;
+      color: #2e3a21;
+      line-height: 1.6;
+    }
+
+    /* Banner */
+    .banner {
+      position: relative;
+      height: 350px;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Gran_Chaco_bosque_argentina_2015_001.JPG/1280px-Gran_Chaco_bosque_argentina_2015_001.JPG') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #e7f1e4;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+      padding: 0 20px;
+    }
+
+    .banner::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(46, 95, 61, 0.6);
+      z-index: 0;
+    }
+
+    .banner-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      text-align: center;
+    }
+
+    .banner h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .banner p {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    /* Main content */
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 8px 15px rgba(46, 95, 61, 0.2);
+      padding: 2rem 2.5rem;
+    }
+
+    main h2 {
+      color: #2e5f3d;
+      margin-bottom: 1rem;
+      border-left: 6px solid #4c8c44;
+      padding-left: 10px;
+    }
+
+    main p {
+      margin-bottom: 1.25rem;
+      font-size: 1.1rem;
+    }
+
+    /* Images section */
+    .imagenes {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+
+    .imagenes img {
+      width: 280px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(46, 95, 61, 0.15);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      object-fit: cover;
+      height: 180px;
+    }
+
+    .imagenes img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Fires section */
+    .incendios {
+      margin-top: 3rem;
+    }
+
+    .incendios .imagenes-incendios {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    .imagenes-incendios img {
+      width: 280px;
+      height: 180px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(255, 69, 0, 0.3);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      object-fit: cover;
+    }
+
+    .imagenes-incendios img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(255, 69, 0, 0.6);
+    }
+
+    /* Video */
+    .video-container {
+      position: relative;
+      max-width: 100%;
+      margin: 0 auto 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(255, 69, 0, 0.4);
+      overflow: hidden;
+    }
+
+    .video-container video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Map section */
+    .mapa {
+      margin-top: 3rem;
+      text-align: center;
+    }
+
+    .mapa iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(46, 95, 61, 0.3);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      background-color: #2e5f3d;
+      color: #e7f1e4;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 650px) {
+      .banner h1 {
+        font-size: 2rem;
+      }
+
+      .banner p {
+        font-size: 1rem;
+      }
+
+      .imagenes img,
+      .imagenes-incendios img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="banner">
+    <div class="banner-content">
+      <h1>Deforestation in Argentina</h1>
+      <p>Preserving our forests, protecting the future</p>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>What is Deforestation?</h2>
+      <p>Deforestation is the loss of forest areas due to human activities such as intensive agriculture, livestock farming, and indiscriminate logging.</p>
+    </section>
+
+    <section>
+      <h2>Situation in Argentina</h2>
+      <p>Argentina has lost millions of hectares of native forests, especially in the Gran Chaco region, due to agricultural expansion and lack of effective controls.</p>
+    </section>
+
+    <section>
+      <h2>Environmental Impacts</h2>
+      <p>Deforestation causes biodiversity loss, increases greenhouse gas emissions, and disrupts hydrological cycles, affecting climate and local communities.</p>
+    </section>
+
+    <section class="imagenes">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Gran_Chaco_bosque_argentina_2015_001.JPG/1280px-Gran_Chaco_bosque_argentina_2015_001.JPG" alt="Forest in Gran Chaco" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Gran_Chaco_cerrado_en_Argentina.jpg" alt="Deforestation in Gran Chaco" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Bosque_nativo_Argentina.jpg" alt="Native forest in Argentina" />
+    </section>
+
+    <!-- Fires section -->
+    <section class="incendios">
+      <h2>Forest Fires in Argentina</h2>
+      <p>Fires are one of the main causes of forest loss and accelerate the deforestation process in vulnerable regions.</p>
+
+      <div class="imagenes-incendios">
+        <img src="https://cdn.pixabay.com/photo/2016/10/05/22/37/fire-1712640_1280.jpg" alt="Forest fire" />
+        <img src="https://cdn.pixabay.com/photo/2019/08/20/09/12/forest-fire-4415618_1280.jpg" alt="Forest fire" />
+        <img src="https://cdn.pixabay.com/photo/2020/09/29/08/52/fire-5609273_1280.jpg" alt="Nature fire" />
+      </div>
+
+      <div class="video-container">
+        <video controls poster="https://cdn.pixabay.com/photo/2017/08/05/11/07/fire-2580818_1280.jpg">
+          <source src="https://cdn.pixabay.com/download/video/2023/02/10/video-6317b5ca4d.mp4?filename=fire-wood-smoke-forest-fire-smoke-6317b5ca4d.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <!-- Map section -->
+    <section class="mapa">
+      <h2>Interactive Fire Map in Argentina</h2>
+      <p>Explore the areas most affected by forest fires in Córdoba province with this interactive map.</p>
+      <iframe 
+        src="https://www.idecor.gob.ar/mapas/mapa-areas-afectadas-por-incendios-2024/" 
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Sources: Greenpeace, Fundación Vida Silvestre Argentina, Wikipedia, Pixabay, IDECOR.</p>
+  </footer>
+
+</body>
+</html>
